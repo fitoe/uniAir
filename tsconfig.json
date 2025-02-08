@@ -1,0 +1,40 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "typeRoots": [
+      "uniapp/types"
+    ],
+    "types": [
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types",
+      "pinia-plugin-persist-uni",
+      "@vue/runtime-core",
+      "@uni-helper/uni-types"
+    ],
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "./auto-imports.d.ts"
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "@uni-helper/uni-types/volar-plugin"
+    ]
+  }
+}

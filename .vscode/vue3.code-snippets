@@ -1,0 +1,18 @@
+{
+  "新建Vue3页面": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "<template>",
+      "  <div>text</div>",
+      "</template>",
+      "<route lang='yaml'>",
+      "style:",
+      "  navigationBarTitleText: '页面标题'",
+      "</route>"
+    ],
+  }
+}
