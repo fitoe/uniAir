@@ -14,3 +14,6 @@ uniapp 模板，基于 [Vitesse Uni App](https://vitesse-docs.netlify.app)
 
 - 修改 `src\composables\settings.ts` 中的 `appid`
 - 修改 `manifest.config.ts` 中的 `projectname`
+
+## 小技巧
+- 空白vue文件使用 `vue3` 快捷键，快速创建默认代码

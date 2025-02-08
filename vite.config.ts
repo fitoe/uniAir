@@ -7,16 +7,15 @@ import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
-import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig, loadEnv } from 'vite'
 import uniPolyfill from 'vite-plugin-uni-polyfill'
-
 const exclude = [
   // 不需要打包的页面
   '**/not-publish.vue',
 ]
-export default ({ mode }) => {
+export default async ({ mode }) => {
+  const UnoCSS = (await import('unocss/vite')).default
   const env = loadEnv(mode, process.cwd())
   const prod = ['production'].includes(mode)
   return defineConfig({
@@ -54,6 +53,7 @@ export default ({ mode }) => {
       },
     },
     plugins: [
+      uni(),
       uniPolyfill(),
       UniHelperManifest(),
       UniPages({
@@ -61,7 +61,7 @@ export default ({ mode }) => {
         exclude,
       }),
       UniLayouts(),
-      Unocss(),
+      UnoCSS(),
       AutoImport({
         imports: [
           'vue',
@@ -84,7 +84,6 @@ export default ({ mode }) => {
         directoryAsNamespace: true,
         resolvers: [WotResolver()],
       }),
-      uni(),
     ],
   })
 }
