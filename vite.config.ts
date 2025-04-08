@@ -53,7 +53,7 @@ export default async ({ mode }) => {
       },
     },
     plugins: [
-      uni(),
+      uni.default(),
       uniPolyfill(),
       UniHelperManifest(),
       UniPages({
@@ -78,7 +78,6 @@ export default async ({ mode }) => {
         ],
         vueTemplate: true,
       }),
-
       Components({
         dts: 'src/components.d.ts',
         directoryAsNamespace: true,
