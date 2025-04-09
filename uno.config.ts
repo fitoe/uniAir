@@ -1,5 +1,6 @@
 import {
   defineConfig,
+  presetMini,
   presetAttributify,
   presetIcons,
   presetTypography,
@@ -10,6 +11,7 @@ import {
 export default defineConfig({
   presets: [
     presetAttributify(),
+    presetMini(),
     presetTypography(),
     presetIcons({
       scale: 1.2,
