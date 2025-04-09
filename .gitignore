@@ -5,3 +5,4 @@ auto-imports.d.ts
 components.d.ts
 typed-router.d.ts
 uni-pages.d.ts
+manifest.json

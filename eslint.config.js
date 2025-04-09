@@ -1,8 +1,7 @@
-const uni = require('@uni-helper/eslint-config')
-const unocss = require('@unocss/eslint-config')
+import unocss from '@unocss/eslint-config/flat'
 
-module.exports = uni(
-  { unocss },
+export default [
+  unocss,
   {
     rules: {
       'vue/singleline-html-element-content-newline': 'off',
@@ -10,4 +9,5 @@ module.exports = uni(
       'no-console': 'off',
     },
   },
-)
+  // other configs
+]
