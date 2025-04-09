@@ -1,0 +1,38 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    }
+  ],
+  "easycom": {
+    "custom": {}
+  },
+  "globalStyle": {
+    "navigationBarTitleText": "应用名称",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "onReachBottomDistance": 400,
+    "app-plus": {
+      "titleNView": false
+    }
+  },
+  "condition": {
+    "current": 0,
+    "list": [
+      {
+        "name": "首页",
+        "path": "/pages/index",
+        "query": ""
+      }
+    ]
+  },
+  "subPackages": []
+}
