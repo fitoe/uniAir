@@ -10,6 +10,7 @@ import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig, loadEnv } from 'vite'
 import uniPolyfill from 'vite-plugin-uni-polyfill'
+
 const exclude = [
   // 不需要打包的页面
   '**/not-publish.vue',

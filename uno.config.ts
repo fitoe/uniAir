@@ -1,8 +1,8 @@
 import {
   defineConfig,
-  presetMini,
   presetAttributify,
   presetIcons,
+  presetMini,
   presetTypography,
   transformerDirectives,
   transformerVariantGroup,
