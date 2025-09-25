@@ -19,7 +19,8 @@
       "@uni-helper/uni-app-types",
       "pinia-plugin-persist-uni",
       "@vue/runtime-core",
-      "@uni-helper/uni-types"
+      "@uni-helper/uni-types",
+      "@uni-helper/vite-plugin-uni-pages"
     ],
     "allowImportingTsExtensions": true,
     "allowJs": true,
