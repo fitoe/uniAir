@@ -2,8 +2,8 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetMini,
   presetTypography,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -11,7 +11,7 @@ import {
 export default defineConfig({
   presets: [
     presetAttributify(),
-    presetMini(),
+    presetWind4(),
     presetTypography(),
     presetIcons({
       scale: 1.2,
@@ -31,5 +31,4 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
-  safelist: 'prose'.split(' '),
 })
