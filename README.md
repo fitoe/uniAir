@@ -19,7 +19,7 @@ uniapp 模板，基于 [Vitesse Uni App](https://vitesse-docs.netlify.app)
 - 空白vue文件使用 `vue3` 快捷键，快速创建默认代码
 
 ```bash
-npx degit fitoe/vitesseAir my-vitesse-app
-cd my-vitesse-app
+npx degit fitoe/uniAir uniAir
+cd uniAir
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
